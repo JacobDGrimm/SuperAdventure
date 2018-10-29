@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Engine
 {
-    class QuestCompletionItem
+    public class QuestCompletionItem
     {
+        public Item Details { get; set; }
+        public int Quantity { get; set; }
     }
 }
