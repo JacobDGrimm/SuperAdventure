@@ -19,7 +19,7 @@ namespace Engine
         public const int ITEM_ID_SNAKE_FANG = 4;
         public const int ITEM_ID_SNAKESKIN = 5;
         public const int ITEM_ID_CLUB = 6;
-        public const int ITEM_ID_HEALING_CLUB = 7;
+        public const int ITEM_ID_HEALING_POTION = 7;
         public const int ITEM_ID_SPIDER_FANG = 8;
         public const int ITEM_ID_SPIDER_SILK = 9;
         public const int ITEM_ID_ADVENTURER_PASS = 10;
@@ -49,6 +49,18 @@ namespace Engine
             PopulateLocations();
         }
         
-
+        private static void PopulateItems()
+        {
+            Items.Add(new Weapon(ITEM_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5));
+            Items.Add(new Item(ITEM_ID_RAT_TAIL, "Rat tail", "Rat Tails"));
+            Items.Add(new Item(ITEM_ID_PIECE_OF_FUR, "Piece of fur", "Pieces of fur"));
+            Items.Add(new Item(ITEM_ID_SNAKE_FANG, "Snake fang", "Snake fangs"));
+            Items.Add(new Item(ITEM_ID_SNAKESKIN, "Snakeskin", "Snakeskins"));
+            Items.Add(new Weapon(ITEM_ID_CLUB, "Club", "Clubs", 3, 10));
+            Items.Add(new HealingPotion(ITEM_ID_HEALING_POTION, "Healing potion", "Healing potions", 5));
+            Items.Add(new Item(ITEM_ID_SPIDER_FANG, "Spider fang", "Spider fangs"));
+            Items.Add(new Item(ITEM_ID_SPIDER_SILK, "Spider silk", "Spider silks"));
+            Items.Add(new Item(ITEM_ID_ADVENTURER_PASS, "Adventurer pass", "Adventurer passes"));
+        }
     }
 }
