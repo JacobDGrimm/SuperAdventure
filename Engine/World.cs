@@ -210,5 +210,18 @@ namespace Engine
 
             return null;
         }
+
+        public static Location LocationByID(int id)
+        {
+            foreach(Location location in Locations)
+            {
+                if (location.ID == id)
+                {
+                    return location;
+                }
+            }
+
+            return null;
+        }
     }
 }
