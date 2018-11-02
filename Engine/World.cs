@@ -171,5 +171,18 @@ namespace Engine
             Locations.Add(bridge);
             Locations.Add(spiderField);
         }
+
+        public static Item ItemByID(int id)
+        {
+            foreach(Item item in Items)
+            {
+                if (item.ID == id)
+                {
+                    return item;
+                }
+            }
+
+            return null;
+        }
     }
 }
