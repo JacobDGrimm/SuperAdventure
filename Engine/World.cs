@@ -197,5 +197,18 @@ namespace Engine
 
             return null;
         }
+
+        public static Quest QuestByID(int id)
+        {
+            foreach(Quest quest in Quests)
+            {
+                if (quest.ID == id)
+                {
+                    return quest;
+                }
+            }
+
+            return null;
+        }
     }
 }
